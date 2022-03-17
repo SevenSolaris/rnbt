@@ -1,3 +1,5 @@
+mod tag;
+
 #[cfg(test)]
 mod tests {
     #[test]
