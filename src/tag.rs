@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub enum Tag {
     Byte(i8),
     Short(i16),
@@ -13,7 +14,13 @@ pub enum Tag {
     LongArray,
 }
 
+pub enum ListTag {
+    Byte(Vec<i8>),
+    Short(Vec<i16>),
+}
+
 #[test]
 fn scratch() {
-    
+    use std::mem::size_of;
+    println!("Size: {}", size_of::<ListTag>());
 }
