@@ -18,9 +18,3 @@ pub enum ListTag {
     Byte(Vec<i8>),
     Short(Vec<i16>),
 }
-
-#[test]
-fn scratch() {
-    use std::mem::size_of;
-    println!("Size: {}", size_of::<ListTag>());
-}
